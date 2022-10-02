@@ -11,7 +11,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
-  color: #240d57;
+  color: var(--Primary-Text-purple-dark);
 }
 
 .snapchat {
@@ -144,7 +144,7 @@
     font-size: 64px;
     line-height: 64px;
     text-align: right;
-    color: #240d57;
+    color: var(--Primary-Text-purple-dark);
   }
 
   .tagline {
