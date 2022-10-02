@@ -8,8 +8,7 @@
 
 .eventName,
 .eventHost,
-.dateContainer,
-.addrContainer {
+.infoBlock {
   margin-left: 20px;
 }
 
@@ -45,19 +44,30 @@
   color: #828282;
 }
 
-.dateContainer,
-.addrContainer {
+.infoBlock {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 20px;
+  padding: 8px;
+  width: 349.57px;
+  height: 64px;
+  border-radius: 10px;
+}
 
-  width: 277px;
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 1px;
+  margin-right: 20px;
+  width: 48px;
   height: 48px;
-
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   /* Inside auto layout */
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -74,28 +84,6 @@
   line-height: 18px;
 
   color: #240d57;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.iconContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  gap: 1px;
-
-  width: 48px;
-  height: 48px;
-
-  background: #ffffff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 
   /* Inside auto layout */
 
@@ -122,18 +110,17 @@
 .addrInfo {
   display: flex;
   flex-direction: column;
+  width: 109px;
 }
 
 .streetName {
   width: 92px;
   height: 18px;
-
   font-family: "Helvetica";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-
   color: #240d57;
 }
 
@@ -155,4 +142,104 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.arrow {
+  position: absolute;
+  margin-left: 340px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {
+  .eventName {
+    position: absolute;
+    left: 182px;
+    top: 717px;
+  }
+
+  .eventHost {
+    position: absolute;
+    left: 182px;
+    top: 771px;
+  }
+
+  .eventImageContainer img {
+    position: absolute;
+    width: 593px;
+    height: 593px;
+    left: calc(50% - 593px / 2 - 0.5px);
+    top: 88px;
+  }
+
+  .dateContainer {
+    position: absolute;
+    left: 190px;
+    top: 841px;
+  }
+
+  .addrContainer {
+    position: absolute;
+    left: 190px;
+    top: 930px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .eventName {
+    position: absolute;
+    width: 333px;
+    height: 37px;
+    left: 240px;
+    top: 194px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: #240d57;
+  }
+
+  .eventHost {
+    position: absolute;
+    width: 155px;
+    height: 15px;
+    left: 240px;
+    top: 248px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #828282;
+  }
+
+  .eventImageContainer img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: calc(50% - 500px / 2 + 266px);
+    top: 184px;
+  }
+
+  .dateContainer {
+    position: absolute;
+    left: 240px;
+    right: 826px;
+    top: 320px;
+  }
+
+  .addrContainer {
+    position: absolute;
+    left: 240px;
+    right: 826px;
+    top: 409px;
+  }
 }

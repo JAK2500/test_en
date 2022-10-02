@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+}
+
+.typo {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.eventBtn:hover,
+.nxtBtn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}

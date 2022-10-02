@@ -1,6 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 import landingImg from "./images/LandingPageImage.svg";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -17,8 +18,9 @@ const LandingPage = () => {
       <div className="landingImg element-centre">
         <img src={landingImg} alt="Landing Image" />
       </div>
-
-      <div className="eventBtn element-centre">🎉 Create my event</div>
+      <Link to="/create">
+        <div className="eventBtn element-centre">🎉 Create my event</div>
+      </Link>
     </div>
   );
 };

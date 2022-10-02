@@ -65,7 +65,122 @@
   flex-grow: 0;
 }
 
-.eventBtn:hover {
-  cursor: pointer;
-  opacity: 0.7;
+@media only screen and (min-width: 700px) {
+  .landingImg {
+    position: absolute;
+    left: calc(50% - 311px / 2 + 0.5px);
+    top: 379px;
+  }
+
+  .landingImg img {
+    width: 311px;
+    height: 548.27px;
+    filter: drop-shadow(0px 0px 33.1283px rgba(0, 0, 0, 0.05));
+    border-radius: 24.8462px;
+  }
+
+  .heading {
+    position: absolute;
+    top: 60px;
+    left: 194.04px;
+    width: 573.91px;
+    height: 192px;
+    text-align: center;
+  }
+
+  .tagline {
+    position: absolute;
+    top: 268px;
+    left: 219.5px;
+    width: 521px;
+    height: 56px;
+    text-align: center;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .eventBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    left: 320px;
+    top: 980px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .landingPageContainer {
+    flex-direction: row;
+  }
+
+  .landingImg {
+    position: absolute;
+    left: calc(50% - 440px / 2 - 366px);
+    top: 100px;
+  }
+
+  .landingImg img {
+    width: 440px;
+    height: 775.69px;
+    filter: drop-shadow(0px 0px 46.8696px rgba(0, 0, 0, 0.05));
+    border-radius: 35.1522px;
+  }
+
+  .heading {
+    position: absolute;
+    top: 306px;
+    left: 778px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: right;
+    color: #240d57;
+  }
+
+  .tagline {
+    position: absolute;
+    top: 514px;
+    left: 831px;
+    width: 521px;
+    height: 56px;
+
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+
+    color: #4f4f4f;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .eventBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    position: absolute;
+    width: 320px;
+    height: 55px;
+    left: 1032px;
+    top: 622px;
+  }
 }

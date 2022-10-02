@@ -1,0 +1,88 @@
+.formContainer {
+  flex-direction: column;
+  background: #fff;
+  width: 430px;
+  border-radius: 10px;
+}
+
+.inputText {
+  border: 2px solid #ebeaed;
+  border-radius: 100px;
+  width: 330px;
+  height: 50px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(21, 20, 57, 0.4);
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba(21, 20, 57, 0.4);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.inputContainer {
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 45px;
+}
+
+.newBtn {
+  background: #25dac5;
+  border-radius: 100px;
+  width: 330px;
+  height: 50px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.termLabel {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  padding-left: 10px;
+
+  /* Colors / Text */
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.nxtBtnContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nxtBtn {
+  width: 187px;
+  height: 50px;
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+  border-radius: 10px;
+  border: none;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: right;
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

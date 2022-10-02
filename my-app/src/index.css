@@ -1,5 +1,20 @@
-/* :root {
-} */
+:root {
+  --Primary-Text-purple-dark: #240d57;
+  --Primary-Text-purple-light: #501fc1;
+  --Primary-Envited-purple: #8456ec;
+  --Primary-Envited-pink: #e87bf8;
+
+  --Secondary-purple-1: #ccb6ff;
+  --Secondary-purple-2: #ede5ff;
+  --Secondary-purple-3: #f6f2ff;
+
+  --bg-1: #4f4f4f;
+  --bg-2: #828282;
+  --bg-3: #bdbdbd;
+  --bg-4: #e0e0e0;
+  --bg-5: #f2f2f2;
+  --bg-6: #bdbdbd;
+}
 
 * {
   box-sizing: border-box;
