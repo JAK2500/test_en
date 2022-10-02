@@ -1,0 +1,158 @@
+.eventImageContainer img {
+  width: 375px;
+  height: 375px;
+  left: calc(50% - 375px / 2);
+  top: 0px;
+  border-radius: 0px;
+}
+
+.eventName,
+.eventHost,
+.dateContainer,
+.addrContainer {
+  margin-left: 20px;
+}
+
+.eventName {
+  position: relative;
+  margin-top: 11px;
+  width: 327px;
+  height: 37px;
+  /* left: calc(50% - 327px / 2 - 4px); */
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 32px;
+
+  color: #240d57;
+}
+
+.eventHost {
+  position: relative;
+  margin-top: 4px;
+
+  width: 341px;
+  height: 15px;
+  /* left: calc(50% - 341px/2 + 3px); */
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.dateContainer,
+.addrContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+
+  width: 277px;
+  height: 48px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.startDate {
+  width: 138px;
+  height: 18px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #240d57;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 1px;
+
+  width: 48px;
+  height: 48px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.endDate {
+  width: 197px;
+  height: 16px;
+  margin-top: 3px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #4f4f4f;
+}
+
+.dateInfo,
+.addrInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.streetName {
+  width: 92px;
+  height: 18px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: #240d57;
+}
+
+.addDetails {
+  width: 152px;
+  height: 16px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #4f4f4f;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
